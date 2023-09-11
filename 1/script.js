@@ -16,26 +16,10 @@ function convertToPound(event) {
     if (kgInputValue) {
         const kilo = Number(kgInputValue);
         const pound = (kilo * 2.2046);
-        outputElement.innerText = pound, "lb";
+        outputElement.innerText = pound;
     
     } else {
         outputElement.innerText = '';
     }
 }
-document.getElementById('search').addEventListener('insert', convertToPound);
-
-function convertToGrams(e) {
-    console.log('convert');
-    const kgInputValue = e.target.value;
-    const outputElement = document.getElementById('grams') ;
-    if (kgInputValue) {
-        const kilo = Number(kgInputValue);
-        const grams = (kilo * 1000);
-        outputElement.#grams.innerText = grams;
-    
-    } else {
-        outputElement.innerText = '';
-    }
-}
-document.getElementById('search').addEventListener('input', convertToPound);
-
+document.getElementById('search').addEventListener('insert', convertToPound)
